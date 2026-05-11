@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dc7c41, #3b2a31);
+  color: #fff;
+}
+
+/* Main container */
+.main {
+  background: linear-gradient(135deg, #2E1F26, #3b2a31);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 420px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+/* First section (password + copy icon) */
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#newPass {
+  background-color: #3b2a31;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  word-break: break-all;
+  color: #C87740;
+  border: 2px solid #C87740;
+}
+
+#copyBtn, #copyBtn2 {
+  font-size: 24px;
+  cursor: pointer;
+  color: #C87740;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#copyBtn:hover, #copyBtn2:hover {
+  transform: scale(1.2);
+  color: #e89c6a;
+}
+
+#copyBtn2 {
+  display: none;
+}
+
+/* Second section (range slider + value) */
+.second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#range {
+  width: 70%;
+  accent-color: #C87740; /* modern browsers */
+}
+
+#rangeVal {
+  font-size: 16px;
+  font-weight: bold;
+  color: #C87740;
+}
+
+/* Inputs (checkboxes) */
+.inputs {
+  margin-bottom: 20px;
+}
+
+.inputs label {
+  margin-left: 8px;
+  font-size: 15px;
+  color: #f1d5c9;
+  cursor: pointer;
+}
+
+/* Attractive custom checkboxes */
+.inputs input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C87740;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.inputs input[type="checkbox"]:hover {
+  box-shadow: 0 0 6px #C87740;
+}
+
+.inputs input[type="checkbox"]:checked {
+  background-color: #C87740;
+  border-color: #C87740;
+}
+
+.inputs input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-size: 14px;
+  color: #2E1F26;
+  font-weight: bold;
+}
+
+/* Generate button */
+#genPass {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #C87740, #e89c6a);
+  color: #2E1F26;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#genPass:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #e89c6a, #C87740);
+}

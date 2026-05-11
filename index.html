@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <h1 id = "newPass"></h1>
+            <i class="fa-regular fa-copy" id="copyBtn"></i>
+            <i class="fa-solid fa-copy" id="copyBtn2"></i>
+
+        </div>
+        <div class="second">
+            <input type="range" id = "range" min="6" max="20">
+            <p id="rangeVal">13</p>
+        </div>
+        
+
+        <div class="inputs">
+            <input type="checkbox" name="capLet" id="capLet">
+            <label for="capLet">UpperCase</label>
+            <br>
+            <input type="checkbox" name="smaLet" id="smaLet">
+            <label for="smaLet">LowerCase</label>
+            <br>
+            <input type="checkbox" name="number" id="number">
+            <label for="number">Number</label>
+            <br>
+            <input type="checkbox" name="symbol" id="symbol">
+            <label for="symbol">Symbols</label>
+            <br>
+        </div>
+
+        <button id="genPass"> Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
